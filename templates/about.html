@@ -1,0 +1,24 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "Stubby" %}
+
+<!- This is a replacement block for Body in base.html -->
+{% block body %}
+    <!- Try building a new body here, bootstrap is a wise choice ->
+    <div class="px-5 py-5 mx-auto">
+        <h1 class="text-primary"><strong>About</strong></h1>
+        <img class="card-img-top" src="https://lh3.googleusercontent.com/dq2EfUCYsrrOhh7OCRw2M3ysaFvw-tzIcst5lwuQlJoP4wuCAOJFVGQEWqVrmURoMIBKdb6mzkQlSYgTQbt16jL9Qwd3czAWpWzVO3hSPZzeuzLZxji_i6XpzFGW0JKk__dBrAqd-iHkB2xQ0Q2XCAyzBtSh4W-knykW50NeogEv5kjfKhLgbjKAdIGR1iFLFHUrQP-CH6npiOBQk1HIHeincHvd8fb0GG9eeifFEp6WLW4bwJdHFMLB0VsaIx6AbSgymz9MiPCyl0v-JtoV2IkxbSoJeKP4Cid33ra1DmG3W5QNOArLA4E-0PGABjNg09384YQ_R7zl7NNSZBP-lZp7Dkk2d0NuERu62zizMAjnfm_pPwAfh4rD9Y_--PeCq7TRs44qwFvZ0nn5wJLsME-TGm-8KbYsYo_D1ZlrvAkQlWd-7c9dnAqF-vNWGxw5wxq0hQSx2zEobDSPfDUfHFSN8zakJcJaQKeNWjbZLZABfTwVqtgVjIWZZfIfixqZUn9bJp4jK5TnEQKebJORDWdh9zsd4Ytva4cCxjby-BbfZAPVSdMFfZeUgWIOv_qao9WUkOJcX_5GBUDY0dd4syMPrah0d4PUXsS68a94w9uGphd2v_Przxne2mK3z7zcsQl1eGiOb_WCWVq7SxTou7PwhqCcq0LpMfnu5KyUQmN0aMEZgzhPtHEwrxM2aOtVBi_xouOy_j-DhzfUxwVeOQ7Wv7U_HiQ59X88Bg8YH1fF2jwXsf5BvwNiinoBvDQyAiCqiPflxMTe1auky7DK8NB7DTTydCqe7s5upEDWu9-PFDPrrxmNB1KNuCN-2MlYVaO4QUHB5acakMFtCqEC_43JU-ZsA8XNw7WVVazL4KBOCsNmEFA04SAysJUdUsWy-T9IyPrbVhzJf9f5rtmS0Zox1MUhjFDZcKsS-VkQVKIg8E_t3OSt66vPSkT1FZMQxMJ-rFJVn4bTRUPAreF7VHsXmNWnrtkguewARnZA5o0w9eORvFOO20W8Pd4tJj3DwK9aDvLv6Y5Q7z1NS_o=w1000-h300-no?authuser=0" alt="Me" height="300">
+        <p class="text-secondary">Luna Iwazaki is a current 10th grader at Del Norte High and is interested in coding and arts!</p>
+    </div>
+{% endblock %}
+
+<div class="px-5 py-5 mx-auto">
+    <h1 class="text-primary"><strong>About</strong></h1>
+    <p class="text-secondary">Luna Iwazaki</p>
+</div>
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
